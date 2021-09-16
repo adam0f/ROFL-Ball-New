@@ -71,12 +71,12 @@ export class Player extends Phaser.GameObjects.Sprite {
 
   if (this.leftKey.isDown || this.cursorKeys?.left.isDown) 
   {
-    (this.body as Phaser.Physics.Arcade.Body).setVelocityX(-getGameWidth(this.scene) * 0.5);
+    (this.body as Phaser.Physics.Arcade.Body).setVelocityX(-getGameWidth(this.scene) * 0.4);
     this.anims.play('left', true);
   }
   else if (this.rightKey.isDown || this.cursorKeys?.right.isDown)
   {
-    (this.body as Phaser.Physics.Arcade.Body).setVelocityX(getGameWidth(this.scene) * 0.5);
+    (this.body as Phaser.Physics.Arcade.Body).setVelocityX(getGameWidth(this.scene) * 0.4);
     this.anims.play('right', true);
   }
   else 
